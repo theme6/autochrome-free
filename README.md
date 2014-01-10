@@ -3,7 +3,7 @@
 Autochrome v1.3.0 is the last FREE version.
 It is neither maintained nor supported.
 
-* Autochrome (free) - [Demo]() | [Source on Github]()
+* Autochrome (free) - [Demo](http://demo-wp.theme6.com/autochrome/) | [Source on Github](https://github.com/theme6/autochrome-free)
 * Autochrome (pro) - [Buy](http://theme6.com/autochrome/)
 * More Themes at [Theme6](http://theme6.com/)
 
