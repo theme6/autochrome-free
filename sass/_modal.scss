@@ -1,0 +1,27 @@
+._modal {
+	@include border-radius(5px);
+	visibility: hidden;
+	z-index: 999;
+	position: absolute;
+	bottom: $pad-bottom*1.5 + $footer-height*1.5;
+	left: $pad;
+	width: 60%;
+	min-width: 400px;
+	background: image-url("rgba-30.png");
+	background: rgba(0, 0, 0, 0.3);
+
+	.close {
+		position: absolute;
+		top: -6px;
+		right: -6px;
+	}
+}
+
+._mctn {
+	@include border-radius(2px);
+	background: #eee;
+	padding: 1em 1.5em;
+	margin: 10px;
+	max-height: 460px;
+	overflow-y: scroll;
+}

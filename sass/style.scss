@@ -1,0 +1,27 @@
+/*!
+Theme Name:   Autochrome
+Theme URI:    http://demo-wp.theme6.com/autochrome/
+Description:  A minimal, photo-focussed photoblog theme with all attention to your photos.
+Author:       Theme6
+Author URI:   http://Theme6.com
+Version:      1.3.0
+Tags:         photo, photoblog, photography, full page, full background image
+*/
+
+@import "compass";
+
+@import "init";
+@import "normalize";
+@import "utils";
+@import "fontface";
+@import "grid";
+@import "sprite";
+@import "modal";
+
+@import "header";
+@import "photo";
+@import "pages";
+@import "gallery";
+@import "footer";
+@import "comments";
+@import "wordpress";

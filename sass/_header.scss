@@ -1,0 +1,86 @@
+#header {
+	z-index: 1;
+	position: absolute;
+	top: $pad-top;
+	left: 0;
+	right: 0;
+	background: image-url("rgba-30.png"); // Fallback for non-supported browsers like IE
+	background: rgba(0, 0, 0, 0.3);
+	text-shadow: rgba(0, 0, 0, 0.8) 0 1px 1px;
+	color: $clr-rev;
+	height: $header-height;
+	line-height: $header-height;
+}
+
+#logo {
+	margin-left: $pad;
+	
+	a {
+		text-decoration: none;
+		font-family: Miso, $font-family-sans;
+		font-size: 2em;
+		text-transform: uppercase;
+		color: #e4e4e4;
+		
+		&:hover, &:focus {
+			color: #fff;
+		}
+	}	
+}
+
+#nav,
+.menu {
+	margin-right: $pad;
+	float: right;
+	
+	ul {
+		@include horizontal-list-container;
+		li { @include horizontal-list-item(0.75em); }
+	}
+	
+	a {
+		text-transform: uppercase;
+		font-size: smaller;
+		text-decoration: none;
+		display: inline-block;
+		color: $clr-rev-a;
+		
+		&:hover, &:focus {
+			color: $clr-rev-a-hover !important;
+			border-bottom: 1px solid $clr-rev-a-hover;
+		}
+	}
+	
+	li.current_page_item { a { color: $clr-rev-a-active; border-bottom: 1px solid $clr-rev-a-active; } }
+}
+
+#search {
+	margin-right: $pad;
+	float: right;
+	
+	input {
+		@include border-radius(500px);
+		border: 0 none;
+		padding: 0.5em 0 0.5em 1em;
+		font-size: small;
+		width: 80%;
+		
+		background: #dedede; // fall-back
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#f2f2f2'); // IE
+		background: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#f2f2f2)); // webkit
+		background: -moz-linear-gradient(top,  #dedede,  #f2f2f2); // firefox 3.6+
+		
+		&:focus { outline: 0 none; }
+	}
+	
+	button { position: relative; top: 0.2em; }
+}
+
+.feed {
+	@include opacity(0.8);
+	padding: 6px 0;
+	
+	&:hover, &:focus {
+		@include opacity(1);
+	}
+}

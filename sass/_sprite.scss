@@ -1,0 +1,20 @@
+.s16r {
+	display: inline-block;
+	text-indent: -99999em;
+	overflow: hidden;
+	height: 16px !important;
+	width: 16px !important;
+	background: image-url("autochrome-sprite.png") no-repeat;
+	border: 0 none !important;
+}
+
+.s24r {
+	@extend .s16r;
+	height: 24px !important;
+	width: 24px !important;
+}
+
+.icon-search	{ background-position: 0 0; }
+.icon-delete	{ background-position: -16px 0; }
+.icon-rss-16	{ background-position: -32px 0; }
+.icon-rss-24	{ background-position: 0 -16px; }

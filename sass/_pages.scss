@@ -1,0 +1,45 @@
+.pages {
+	@include border-radius(5px);
+	border: 1px solid #222;
+	position: absolute;
+	width: 50%;
+	margin: ($pad-top*2 + $header-height) $pad $pad $pad;
+	padding: 1em;
+	background: rgba(0, 0, 0, 0.3);
+	color: $clr-rev;
+	
+	a {
+		color: $clr-rev-a;
+		text-decoration: none;
+		border-bottom: 1px solid #ccc;
+		
+		&:hover, &:focus {
+			color: $clr-rev-a-hover !important;
+			border-color: $clr-rev-a-hover;
+		}
+	}
+}
+
+.not-found {
+	position: absolute;
+	left: $pad;
+	bottom: $pad-bottom*2;
+	color: #eee;
+	text-shadow: rgba(0, 0, 0 , 0.75) 0 1px 1px;
+	font-family: Miso, $font-family-sans;
+	
+	.title {
+		font-size: 2em;
+		text-transform: uppercase;
+		margin: 0 !important;
+		padding: 0 !important;
+		color: #eee;
+	}
+	
+	.tagline {
+		font-size: 1.6em;
+		margin: 0 !important;
+		padding: 0 !important;
+		color: #fff;
+	}
+}
